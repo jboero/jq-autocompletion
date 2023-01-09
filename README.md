@@ -1,2 +1,2 @@
-# jq-autocompletion
-Experimental shell autocompletion for jq and JSON browsing.
+# Shell autocompletion for JQ
+Experimental shell autocompletion for jq and JSON browsing. This environment file adds a shell function called `jqr` which calls `jq` with reversed parameters. It always bugged me that jq puts the query before the file which prevents autocompletion. Putting the file first allows autocompletion for the query. Currently basic queries are supported for Bash only. GetOpts isn't yet used to include standard jq options like `-r` so be careful. This is just to help navigate complex jq lookups because I'm a terribly lazy and forgetful dude.  In future I would like to add Fish and Zsh support and also offer more complex queries and functions.  Currently experimental so use at your own risk.
